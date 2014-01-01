@@ -193,7 +193,6 @@ Player.prototype.updateStats = function(gameboardHeight) {
 	var altitude = gameboardHeight-this.position.y-this.height/2;
 	document.getElementById('altitude').innerHTML = '<span>ALTITUDE: </span>'+altitude.toFixed(2);
 	document.getElementById('velocity').innerHTML = '<span>VELOCITY: </span>'+this.velocity.x.toFixed(2)+', '+this.velocity.y.toFixed(2);
-	//var modDir = (this.direction%(2*Math.PI)-(Math.PI/2))*(180/Math.PI);
 	var modDir = mod( this.direction+3*Math.PI/2, 2*Math.PI ) * (180/Math.PI);
 	document.getElementById('direction').innerHTML = '<span>DIRECTION: </span>'+modDir.toFixed()+'&deg;';
 };
@@ -251,10 +250,6 @@ Player.prototype.pixelDetection = function(mountDOM, ctMount, ctShip, imct, moun
 	var overlapY1 = mountY1 < shipY1 ? shipY1 : mountY1;
 	var overlapX2 = mountX2 < shipX2 ? mountX2 : shipX2;
 	var overlapY2 = mountY2 < shipY2 ? mountY2 : shipY2;
-	
-	/*var shipData=ctShip.getImageData(overlapX1,overlapY1,overlapX2-overlapX1,overlapY2-overlapY1);
-	var mountData=ctMount.getImageData(overlapX1-mountX1,overlapY1-mountHeight,overlapX2-overlapX1-mountX1,overlapY2-overlapY1-mountHeight);
-	ctMount.putImageData(shipData,0,0);*/
 	
 	imct.clearRect(overlapX1,overlapY1,overlapX2-overlapX1,overlapY2-overlapY1);
 	mountObj.draw(imct);
@@ -347,7 +342,6 @@ window.Game = (function(){
 		ctMount1.lineWidth = 2;
 		ctMount1.strokeStyle = 'white';
 		ctMount1.fillStyle = 'black';
-		//stopPoints = [[0,150],[50,70],[90,90],[105,60],[115,63],[140,30],[155,33],[170,0],[210,60],[220,50],[270,120],[290, 100],[320,150],[0,150]];
 		stopPoints = [[0,400],[50,320],[90,340],[105,310],[115,313],[140,280],[155,283],[170,250],[210,310],[220,300],[270,370],[290, 350],[320,400],[0,400]];
 		mountHeight = 150;
 		mountWidth = 320;
@@ -362,7 +356,6 @@ window.Game = (function(){
 		ctMount2.lineWidth = 2;
 		ctMount2.strokeStyle = 'white';
 		ctMount2.fillStyle = 'black';
-		//stopPoints = [[0,150],[50,100],[60,110],[105,60],[115,60],[140,30],[150,35],[170,20],[190,40],[195,35],[230,80],[250,60],[270,100],[300,100],[350,50],[350,150],[0,150]];
 		stopPoints = [[450,400],[500,350],[510,360],[555,310],[565,310],[590,280],[600,285],[620,270],[640,290],[645,285],[680,330],[700,310],[720,350],[750,350],[800,300],[800,400],[0,400]];
 		mountHeight = 150;
 		mountWidth = 350;

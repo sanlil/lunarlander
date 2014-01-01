@@ -1,0 +1,37 @@
+<!--  
+index.html
+The game Lunar Lander with HTML5 Canvas and JavaScript
+Sandra Liljeqvist 2013
+http://sandra.liljeqvist.nu
+-->
+
+<!doctype html>
+<html lang='en' class='no-js'>
+<head>
+	<meta charset='UTF-8' />
+	<title>Lunar Lander</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<section>
+		<div id='gameboard'>
+			<canvas id="ship" width='800' height='400'></canvas>
+			<canvas id="background" width='800' height='400'></canvas>
+			<canvas id="mount1" width='800' height='400'></canvas>
+			<canvas id="mount2" width='800' height='400'></canvas>
+			<canvas id="imCanvas" width='800' height='400'></canvas>
+			<div id='stats'>
+				<div id='altitude'></div>
+				<div id='velocity'></div>
+				<div id='direction'></div>
+			</div>
+			<div id='winMessage'></div>
+			<div id='overlay'></div>
+		</div>
+		<p class='left'><a href='https://github.com/Sanlil/'>The code on GitHub</a></p>
+		<p class='right'>Lunar Lander by <a href='http://sandra.liljeqvist.nu'>Sandra Liljeqvist</a> 2013</p>
+	</section>
+<script src="lunarlander.js"></script>
+</body>
+</html>

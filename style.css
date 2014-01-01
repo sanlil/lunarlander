@@ -1,0 +1,122 @@
+/* 
+ * style.css
+ * Stylesheet for Lunar Lander 
+ * Sandra Liljeqvist 2013
+ * http://sandra.liljeqvist.nu
+ */
+
+body {
+ 	 background: black;
+}
+
+section {
+	width: 810px;
+	margin: 50px auto;
+}
+
+#gameboard {
+	background: black;
+	height: 400px;
+	width: 800px;
+	position: relative;
+	border: 5px solid rgb(240,240,240);
+	font-family: 'Abel', 'arial', 'sans-serif';
+}
+
+#stats {
+	padding: 10px;
+	color: white;
+	background: black;
+	position: absolute;
+	z-index: 995;
+	top: 0px;
+	right: 0px;
+	line-height: 1.3em;
+	min-width: 165px;
+}
+#stats span {
+	min-width: 80px;
+	display: inline-block;
+}
+
+#winMessage {
+	position: absolute;
+	z-index: 998;
+	top: 0px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 2.5em;
+	margin-top: 20px;
+}
+
+#winMessage a {
+	color: white;
+	text-decoration: none;
+	font-size: 0.6em;
+}
+#winMessage a:hover {
+	color: rgb(180,180,180);
+}
+
+#overlay {
+	position: absolute;
+	z-index: 997;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	display: none;
+}
+
+#ship {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 995;
+}
+#background {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 994;
+}
+#mount1 {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	z-index: 996;
+}
+#mount2 {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	z-index: 996;
+}
+#imCanvas {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	z-index: 993;
+}
+.right, .left {	
+	margin-top: 3px;
+	font-family: helvetica neue, helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: 300;
+}
+.right {
+	color: white;
+	float: right;
+}
+.left {
+	color: white;
+	float: left;
+}
+.right a, .left a {
+	color: white;
+	text-decoration: none;
+}
+.right a:hover, .left a:hover {
+	color: rgb(200,200,200);
+}

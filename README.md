@@ -1,6 +1,6 @@
 Lunar Lander
 ============
-The classic arcade game Lunar Lander made with HTML5 Canvas and JavaScript Prototypes
+The classic arcade game Lunar Lander made with HTML5 Canvas and JavaScript Prototypes that looks like [this](http://sanlil.github.io/lunarlander/).
 
 Contribution
 ------------

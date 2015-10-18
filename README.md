@@ -4,9 +4,9 @@ The classic arcade game Lunar Lander made with HTML5 Canvas and JavaScript Proto
 
 Contribution
 ------------
-Feel free to contribute and to tell me about [issues](https://github.com/Sanlil/lunarlander/issues) and suggestions.
+Feel free to contribute or to tell me about [issues](https://github.com/Sanlil/lunarlander/issues) and suggestions.
 
 Author
 ------
-Sandra Liljeqvist 
+Sandra Liljeqvist  
 Date: 2014-01-01

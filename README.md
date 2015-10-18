@@ -8,6 +8,5 @@ Feel free to contribute and to tell me about [issues](https://github.com/Sanlil/
 
 Author
 ------
-Sandra Liljeqvist  
-[sandra.liljeqvist.nu](http://sandra.liljeqvist.nu)  
+Sandra Liljeqvist 
 Date: 2014-01-01
